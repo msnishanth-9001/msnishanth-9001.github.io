@@ -1,5 +1,7 @@
 # Premier Event Planning Website
 
+hello world
+
 A modern, responsive event planning website built with HTML, CSS, and JavaScript featuring interactive animations, service showcases, and event management functionality.
 
 ## Features
