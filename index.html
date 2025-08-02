@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Event Planning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/150x50/6366f1/ffffff?text=newEvent" alt="newEvent" class="logo-img">
+            </div>
+            <button class="contact-planner-btn" onclick="showContactInfo()">
+                <i class="fas fa-phone"></i> Contact Planner
+            </button>
+        </div>
+    </header>
+
+    <!-- Contact Info Popup -->
+    <div id="contactPopup" class="contact-popup" style="display: none;">
+        <div class="popup-content">
+            <button class="popup-close" onclick="hideContactInfo()">&times;</button>
+            <h3>Contact Information</h3>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>Mobile - 99999 77777</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email - info@newevents.in</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Premier Event Planning for your Dreams</h1>
+            <p class="hero-subtitle">Create the memorable experience</p>
+            <button class="plan-event-btn" onclick="createNewEvent()">
+                <span class="btn-text">+ Plan Event</span>
+                <div class="sparkle-container">
+                    <div class="sparkle sparkle-1"></div>
+                    <div class="sparkle sparkle-2"></div>
+                    <div class="sparkle sparkle-3"></div>
+                    <div class="sun sun-1"></div>
+                    <div class="sun sun-2"></div>
+                </div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+        </div>
+        <div class="service-container">
+            <!-- Service: Event Planner -->
+            <div class="service active" id="service-planner">
+                <h3>A/ Event Planner</h3>
+                <ul class="planner">
+                    <li><span class="emoji">💡</span> Ideate unique concepts</li>
+                    <li><span class="emoji">🎭</span> Theme development</li>
+                    <li><span class="emoji">🎪</span> Creative design</li>
+                    <li><span class="emoji">🌸</span> Decoration planning</li>
+                    <li><span class="emoji">🎵</span> Artist management</li>
+                </ul>
+            </div>
+
+            <!-- Service: Event Conductor -->
+            <div class="service" id="service-conductor">
+                <h3>B/ Event Conductor</h3>
+                <ul class="conductor">
+                    <li><span class="emoji">🏢</span> Venue selection</li>
+                    <li><span class="emoji">🎪</span> Stage setup</li>
+                    <li><span class="emoji">🪑</span> Seating arrangements</li>
+                    <li><span class="emoji">💡</span> Lighting design</li>
+                    <li><span class="emoji">🔊</span> Audio systems</li>
+                    <li><span class="emoji">📸</span> Photo & videography</li>
+                    <li><span class="emoji">🎭</span> Performance coordination</li>
+                    <li><span class="emoji">🍽️</span> Catering services</li>
+                    <li><span class="emoji">🏨</span> Accommodation arrangements</li>
+                </ul>
+            </div>
+
+            <!-- Service: Organizer -->
+            <div class="service" id="service-organizer">
+                <h3>C/ Event Organizer</h3>
+                <ul class="organizer">
+                    <li><span class="emoji">📋</span> Resource management</li>
+                    <li><span class="emoji">⏰</span> Timely execution</li>
+                    <li><span class="emoji">👥</span> Team coordination</li>
+                    <li><span class="emoji">📊</span> Project oversight</li>
+                    <li><span class="emoji">🎯</span> Quality assurance</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Types Section -->
+    <section id="events" class="event-types">
+        <div class="container">
+            <h2 class="section-title">Event Types</h2>
+            <div class="event-types-grid">
+                <div class="event-type-card conferences">
+                    <h3>Conferences</h3>
+                    <p>Professional business, conferences and seminars</p>
+                </div>
+                <div class="event-type-card corporate">
+                    <h3>Corporate Events</h3>
+                    <p>Team building and Corporate gatherings</p>
+                </div>
+                <div class="event-type-card sporting">
+                    <h3>Sporting Events</h3>
+                    <p>Sports tournaments and Competitions</p>
+                </div>
+                <div class="event-type-card family">
+                    <h3>Family Events</h3>
+                    <p>Weddings, birthdays, and celebrations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 EventPlanner. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
